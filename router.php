@@ -1,5 +1,6 @@
 <?php
 // Function to sanitize user input (prevent directory traversal)
+
 function sanitizePageParameter($page) {
     return preg_replace('/[^a-zA-Z0-9\-_]/', '', $page); // Remove any characters except letters, numbers, hyphens, and underscores
 }

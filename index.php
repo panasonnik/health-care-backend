@@ -1,4 +1,26 @@
-<?php include('router.php'); ?>
+<?php
+// Check if the 'page' parameter is set in the URL
+if(isset($_GET['page'])) {
+    // Function to sanitize user input (prevent directory traversal)
+    if (!function_exists('sanitizePageParameter')) {
+        function sanitizePageParameter($page) {
+            return preg_replace('/[^a-zA-Z0-9\-_]/', '', $page); // Remove any characters except letters, numbers, hyphens, and underscores
+        }
+    }
+
+    $page = sanitizePageParameter($_GET['page']);
+    // Include the corresponding PHP file based on the 'page' parameter
+    $filename = $page . '.php';
+    if (file_exists($filename)) {
+        include($filename);
+    } else {
+        // Handle page not found gracefully (redirect or display error message)
+        // Example: header('Location: error.php');
+        echo 'Page not found.';
+        exit; // Terminate script execution after displaying the error message
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +44,7 @@
 
 <nav class="navbar">
     <div class="navbar__logo logo">
-        <a href="?page=info">
+        <a href="index.php">
             <svg
                 class="navbar__logo-icon logo-icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -46,9 +68,8 @@
             d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
         />
     </svg>
-    <a href="?page=info" class="navbar__link-specialist"
-    >Find your specialist</a
-    >
+    <a href="#" onclick="scrollToElement('action'); return false;" class="navbar__link-specialist">Find your specialist</a>
+
     <div class="navbar__phone">
         <div class="navbar__phone-icon-circle">
             <svg
@@ -80,7 +101,7 @@
         <h1 class="hero__heading heading">Find quality health care nearby</h1>
         <div class="hero__info">
             <p>Find top-rated doctors and specialists near you.</p>
-            <a href="?page=info" class="hero__cta-button cta"
+            <a href="#" onclick="scrollToElement('action'); return false;" class="hero__cta-button cta"
             >Discover care providers</a
             >
         </div>
@@ -114,7 +135,7 @@
                 </p>
             </div>
         </div>
-        <a class="cta" href="?page=info">Find your health care provider</a>
+        <a class="cta" href="#" onclick="scrollToElement('action'); return false;">Find your health care provider</a>
     </section>
     <section class="why-us">
         <h2>Why us?</h2>
@@ -190,13 +211,13 @@
             </div>
         </div>
     </section>
-    <section class="action">
+    <section class="action" id="action">
         <h2 class="subheading">Find your health care provider now!</h2>
-        <form action="" method="post" class="action__form">
+        <form action="" method="get" class="action__form">
             <input type="hidden" name="page" value="info">
             <select
-                id="services"
-                name="services"
+                id="service"
+                name="service"
                 class="action__form-select form-select"
             >
                 <option value="" disabled selected>Service</option>
@@ -205,8 +226,8 @@
                 <option value="cosmetologist">Cosmetologist</option>
             </select>
             <select
-                id="locations"
-                name="locations"
+                id="location"
+                name="location"
                 class="action__form-select form-select"
             >
                 <option value="" disabled selected>Location</option>
@@ -246,5 +267,18 @@
         </div>
     </div>
 </div>
+<script>
+    function scrollToElement(id) {
+        var element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+                inline: "nearest"
+            });
+        }
+    }
+</script>
+
 </body>
 </html>

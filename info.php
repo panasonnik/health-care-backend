@@ -1,4 +1,4 @@
-<?php include('router.php'); ?>
+
 <?php
 // Check if the 'services' and 'locations' parameters are set in the URL
 if(isset($_GET['service']) && isset($_GET['location'])) {
@@ -55,7 +55,7 @@ if(isset($_GET['service']) && isset($_GET['location'])) {
             d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
         />
     </svg>
-    <a href="?page=info" class="navbar__link-specialist"
+    <a href="index.php" class="navbar__link-specialist"
     >Find your specialist</a
     >
     <div class="navbar__phone">
@@ -84,12 +84,12 @@ if(isset($_GET['service']) && isset($_GET['location'])) {
             Discover top-rated specialists
         </h2>
         <form class="search-container__form">
-            <select id="services" name="services" class="search-container__form-select">
+            <select id="service" name="service" class="search-container__form-select">
                 <option value="dentist"<?php if ($service === 'dentist') echo ' selected'; ?>>Dentist</option>
                 <option value="physician"<?php if ($service === 'physician') echo ' selected'; ?>>Physician</option>
                 <option value="cosmetologist"<?php if ($service === 'cosmetologist') echo ' selected'; ?>>Cosmetologist</option>
             </select>
-            <select id="locations" name="locations" class="search-container__form-select">
+            <select id="location" name="location" class="search-container__form-select">
                 <option value="germany"<?php if ($location === 'germany') echo ' selected'; ?>>Germany</option>
                 <option value="austria"<?php if ($location === 'austria') echo ' selected'; ?>>Austria</option>
                 <option value="italy"<?php if ($location === 'italy') echo ' selected'; ?>>Italy</option>
