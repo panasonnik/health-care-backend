@@ -192,7 +192,8 @@
     </section>
     <section class="action">
         <h2 class="subheading">Find your health care provider now!</h2>
-        <form action="./formHandler.php" method="post" class="action__form">
+        <form action="" method="post" class="action__form">
+            <input type="hidden" name="page" value="info">
             <select
                 id="services"
                 name="services"
