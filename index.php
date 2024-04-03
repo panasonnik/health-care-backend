@@ -263,6 +263,9 @@ if(isset($_GET['page'])) {
                 <p>Contact</p>
                 <a class="footer__phone-number">+xx (xxx) xxx-xx-xx</a>
                 <a class="footer__gmail">health.now@gmail.com</a>
+                <form action="./username.php" method="post">
+                    <input type="text" name="username" id="username" placeholder="username"/>
+                </form>
             </div>
         </div>
     </div>
