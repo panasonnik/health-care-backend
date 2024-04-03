@@ -1,0 +1,103 @@
+@media(min-width:1981px) {
+    .content {
+        margin: 0 300px;
+    }
+    .navbar, .footer {
+        padding: 20px 300px;
+    }
+    .heading {
+        font-size: 76px;
+    }
+    .subheading {
+        font-size:64px;
+    }
+    .cta {
+        font-size:24px;
+        padding: 16px 36px;
+    }
+    .hero {
+        &__info p {
+            font-size: 26px;
+        }
+    }
+    .info {
+        &__cards-container {
+            gap:30px;
+        }
+        &__card {
+        &-img {
+            padding: 60px;
+            border-radius: 24px;
+            }
+            & h3 {
+                margin-top: 20px;
+                font-size:26px;
+            }
+            &-desc {
+                font-size:26px;
+            }
+        }
+
+    }
+    .why-us {
+        & h2 {
+            text-align: center;
+        }
+        &__cards-container {
+            width:80%;
+            margin-left:auto;
+            margin-right: auto;
+        }
+        &__icon-container {
+            width:100px;
+            height:100px;
+        } 
+        &__icon {
+            width: 50px;
+            height:50px;
+        }
+        &__card {
+            &__feature-details {
+                font-size:24px;
+            }
+        }
+        &__title {
+            font-size:26px;
+        }
+        
+    }
+    .action {
+        &__form-select, &__submit {
+            height:90px;
+        }
+    }
+    .footer {
+        &__logo {
+            gap:4px;
+            &-icon {
+                width: 54px;
+                height:54px;
+            }
+            &-text {
+                font-size: 20px;
+            }
+        }
+        &__policy {
+            a {
+                font-size: 24px;
+            }
+        }
+        &__contacts {
+            p {
+                font-size:26px;
+            }
+            
+        }
+        &__phone-number {
+            font-size: 30px;
+        }
+        &__gmail {
+            font-size:26px;
+        }
+    }
+}

@@ -1,0 +1,82 @@
+@media (min-width: 1981px) {
+  .content {
+    margin: 0 300px;
+  }
+  .navbar, .footer {
+    padding: 20px 300px;
+  }
+  .heading {
+    font-size: 76px;
+  }
+  .subheading {
+    font-size: 64px;
+  }
+  .cta {
+    font-size: 24px;
+    padding: 16px 36px;
+  }
+  .hero__info p {
+    font-size: 26px;
+  }
+  .info__cards-container {
+    gap: 30px;
+  }
+  .info__card-img {
+    padding: 60px;
+    border-radius: 24px;
+  }
+  .info__card h3 {
+    margin-top: 20px;
+    font-size: 26px;
+  }
+  .info__card-desc {
+    font-size: 26px;
+  }
+  .why-us h2 {
+    text-align: center;
+  }
+  .why-us__cards-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .why-us__icon-container {
+    width: 100px;
+    height: 100px;
+  }
+  .why-us__icon {
+    width: 50px;
+    height: 50px;
+  }
+  .why-us__card__feature-details {
+    font-size: 24px;
+  }
+  .why-us__title {
+    font-size: 26px;
+  }
+  .action__form-select, .action__submit {
+    height: 90px;
+  }
+  .footer__logo {
+    gap: 4px;
+  }
+  .footer__logo-icon {
+    width: 54px;
+    height: 54px;
+  }
+  .footer__logo-text {
+    font-size: 20px;
+  }
+  .footer__policy a {
+    font-size: 24px;
+  }
+  .footer__contacts p {
+    font-size: 26px;
+  }
+  .footer__phone-number {
+    font-size: 30px;
+  }
+  .footer__gmail {
+    font-size: 26px;
+  }
+}

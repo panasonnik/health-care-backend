@@ -1,0 +1,189 @@
+@media(max-width:800px) {
+    .navbar, .footer {
+      padding:10px 50px;
+    }
+    .content {
+      margin:0 50px;
+    }
+    .hero{
+      width:100%;
+    }
+    .why-us__cards-container {
+      grid-template-columns: repeat(1, 1fr);
+      gap:20px;
+    }
+    .why-us__card {
+      width:50%;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    .why-us__card__content {
+      display:flex;
+      flex-direction: column;
+      gap: 16px;
+      justify-content: center;
+      align-items: center;
+    }
+    .why-us__card__content > * {
+      margin:0;
+    }
+    .why-us__title {
+      margin-top:0;
+    }
+    .info {
+      margin-bottom: 65px;
+    }
+    .info__cards-container {
+      gap:10px;
+    }
+    .info__card-img {
+        padding: 20px 16px;
+    }
+  .info__card h3,.info__card-desc {
+      font-size:16px;
+  }
+  .footer {
+      &__contacts {
+          display: block; 
+      }
+      &__policy {
+          gap:0px;
+      }
+      &__policy >* {
+          font-size:16px;
+      }
+      &__contact>* {
+          font-size:16px;
+      }
+    }
+    .action {
+      width:80%;
+    }
+  
+  }
+
+@media(max-width:600px) {
+    .content {
+        margin:0 16px;
+      }
+
+      h1 {
+        font-size:40px;
+      }
+      h2 {
+        font-size:30px;
+      } 
+      
+      .hero {
+        margin:0;
+        margin: 50px auto 0;
+        width: 358px;
+      }
+      .hero__doctors-img {
+        width:300px;
+      }
+      .hero__info {
+        font-size:20px;
+      }
+      .hero p{
+        font-size:22px;
+      }
+      .hero__text-container {
+        width:100%;
+      }
+      .cta {
+        padding:16px;
+        border-radius: 16px;
+        width:100%;
+        font-size: 18px;
+      }
+      /*HOW DOES IT WORK*/
+      .info{
+        margin:0;
+        margin-top:120px;
+      }
+
+      .info__cards-container {
+        gap: 6px;
+      }
+      .info__card-desc {
+        font-size:18px;
+      }
+      .why-us__card {
+        width:80%;
+        margin-left:auto;
+        margin-right: auto;
+      }
+      .action {
+        margin: 100px auto 107px;
+        width:100%;
+      }
+      .action__form {
+        gap:16px;
+      }
+      .action h2{
+        margin-bottom:20px;
+        font-size: 30px;
+      }
+      .action__form-select, .action__submit {
+        padding: 11px 20px;
+        border-radius: 10px;
+        font-size: 14px;
+        width:100%;
+        background-size: 15px;
+        background-position: right 20px center;
+        height:50px;
+        margin:0;
+      }  
+}
+
+@media(max-width:676px) {
+    .heading {
+        font-size:40px;
+    }
+    .subheading{
+        font-size: 30px;
+    }
+  .navbar {
+    padding:10px 16px;
+  }
+  .navbar__logo-text, .navbar__phone{
+    display:none;
+  }
+  .navbar__logo-icon {
+    width:40px;
+  }
+  .navbar__menu-icon {
+    display:block;
+    width: 33px;
+    aspect-ratio:1/1;
+    fill:var(--muted-text);
+  }
+  .why-us__card {
+    width:80%;
+  }
+}
+
+
+@media(max-width:376px) {
+    h1 {
+        font-size:36px;
+      }
+      h2 {
+        font-size:28px;
+      } 
+      .navbar, .footer {
+        padding: 16px;
+      }
+      .content {
+        margin:0 16px;
+      }
+      .cta {
+        font-size: 16px;
+      }
+      .why-us {
+        &__card {
+            width:100%;
+        }
+      }
+}

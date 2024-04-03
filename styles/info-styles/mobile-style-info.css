@@ -1,0 +1,185 @@
+:root {
+  --primary-color: #339989;
+  --primary-color-light: #E4EEED;
+  --text-color: #131515;
+  --muted-text: #495057;
+  --background: #FFFAFB;
+}
+
+@media (max-width: 736px) {
+  .content {
+    margin: 0 16px;
+  }
+  .navbar {
+    padding: 23px 16px;
+  }
+  .navbar__logo-text {
+    display: none;
+  }
+  .navbar__logo-icon {
+    width: 33px;
+  }
+  .navbar__menu-icon {
+    display: block;
+    width: 30px;
+    fill: var(--muted-text);
+  }
+  .navbar__phone {
+    display: none;
+  }
+  .search-container {
+    margin: 60px 0 30px;
+  }
+  .search-container__heading {
+    font-size: 30px;
+    margin-top: 60px;
+    text-align: center;
+  }
+  .search-container__form-select, .search-container__filter-btn {
+    height: 50px;
+    width: 100%;
+  }
+  .search-container__filter-btn {
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    order: 2;
+  }
+  .search-container__filter-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .people-list {
+    margin-top: 0;
+  }
+  .people-list__card {
+    width: 100%;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .people-list__card__doctor-img {
+    margin: 0 auto;
+  }
+  .people-list__card__doctor-img img {
+    width: 136px;
+    height: 152px;
+    border-radius: 5px;
+  }
+  .people-list__card__doctor-img__rating {
+    margin-top: 6px;
+    gap: 1px;
+    height: 14px;
+    align-items: center;
+  }
+  .people-list__card__doctor-img__num-rating {
+    font-size: 12px;
+  }
+  .people-list__card__star-icon {
+    width: 16px;
+  }
+  .people-list__card__doctor-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .people-list__card__doctor-info h3 {
+    font-size: 16px;
+    text-align: center;
+    order: 1;
+  }
+  .people-list__card__doctor-info__desc {
+    font-size: 14px;
+    max-width: 100%;
+    order: 3;
+    margin: 0;
+  }
+  .people-list__card__doctor-info__location {
+    margin: 0;
+    order: 4;
+    font-size: 12px;
+    max-width: 100%;
+  }
+  .people-list__card__price {
+    order: 2;
+    padding: 3px 12px;
+    gap: 4px;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+  .people-list__card__price .wallet-icon {
+    width: 16px;
+  }
+  .people-list__card__price p {
+    font-size: 10px;
+  }
+  .people-list__card__cta-btn {
+    order: 5;
+    text-align: center;
+    padding: 14px auto;
+    font-weight: bold;
+    font-size: 12px;
+    max-width: 100%;
+    margin-top: 20px;
+    white-space: nowrap;
+  }
+  .footer {
+    padding: 14px 16px;
+    font-size: 16px;
+    margin-top: 50px;
+  }
+  .footer__logo {
+    gap: 8px;
+  }
+  .footer__logo-icon {
+    width: 30px;
+  }
+  .footer__contacts-container {
+    flex-direction: column-reverse;
+    align-items: end;
+  }
+  .footer__contacts {
+    gap: 2px;
+    text-align: right;
+  }
+  .footer__contacts p {
+    margin-top: 14px;
+    font-size: 16px;
+  }
+  .footer__phone-number {
+    font-size: 16px;
+  }
+  .footer__gmail {
+    font-size: 16px;
+  }
+  .footer__policy {
+    text-align: right;
+    flex-direction: column;
+    gap: 0px;
+    margin-bottom: 14px;
+  }
+  .footer__policy a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 320px) {
+  .footer {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+  .footer__logo-text {
+    font-size: 12px;
+  }
+  .footer__contacts-container {
+    gap: 10px;
+  }
+  .footer__policy a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 720px) and (min-width: 660px) {
+  .people-list__card {
+    width: 70%;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,187 @@
+:root {
+  --primary-color: #339989;
+  --primary-color-light: #E4EEED;
+  --text-color: #131515;
+  --muted-text: #495057;
+  --background: #FFFAFB;
+}
+@media(max-width:736px) {
+  .content {
+    margin:0 16px;
+  }
+  .navbar {
+    padding: 23px 16px;
+    &__logo-text {
+      display:none;
+    } &__logo-icon {
+      width: 33px;
+    }
+    &__menu-icon {
+      display:block;
+      width:30px;
+      fill:var(--muted-text);
+    }
+    &__phone {
+      display:none;
+    }
+  }
+  .search-container {
+    margin: 60px 0 30px;
+    &__heading {
+      font-size:30px;
+      margin-top: 60px;
+      text-align:center;
+    }
+    &__form-select,  &__filter-btn {
+      height:50px;
+      width:100%;
+    }
+    &__filter-btn {
+      padding:15px;
+      width:50px;
+      height:50px;
+      order:2;
+  }
+  &__filter-icon {
+      width: 20px;
+      height: 20px;
+  }
+  }
+  .people-list {
+    margin-top:0;
+    &__card {
+      width:100%;
+      gap:20px;
+      flex-direction: column;
+      align-items: center;
+      &__doctor-img {
+        margin:0 auto;
+        img {
+          width:136px;
+          height:152px;
+          border-radius:5px;
+        }
+        &__rating {
+          margin-top:6px;
+          gap:1px;
+          height: 14px;
+          align-items: center;
+        }
+        &__num-rating {
+          font-size:12px;
+        }
+      }
+      &__star-icon {
+        width:16px;
+      }
+      &__doctor-info {
+        display:flex;
+        flex-direction: column;
+        gap:12px;
+        h3 {
+          font-size:16px;
+          text-align:center;
+          order:1;
+        }
+        &__desc {
+          font-size:14px;
+          max-width:100%;
+          order:3;
+          margin:0;
+        }
+        &__location {
+          margin:0;
+          order:4;
+          font-size:12px;
+          max-width:100%;
+        }
+      }
+      &__price {
+        order:2;
+        padding: 3px 12px;
+        gap: 4px;
+        border-radius:10px;
+        margin: 0 auto;
+        & .wallet-icon {
+          width:16px;
+        }
+        & p {
+          font-size:10px;
+        }
+      }
+      &__cta-btn {
+        order:5;
+        text-align:center;
+        padding: 14px auto;
+        font-weight: bold;
+        font-size: 12px;
+        max-width:100%;
+        margin-top: 20px;
+        white-space: nowrap;
+      }
+    }
+  }
+  .footer {
+    padding: 14px 16px;
+    font-size:16px;
+    margin-top:50px;
+    &__logo {
+      gap:8px;
+    }
+
+    &__logo-icon {
+      width:30px;
+    }
+    &__contacts-container {
+      flex-direction: column-reverse;
+      align-items: end;
+    }
+    &__contacts {
+      gap: 2px;
+      & p{
+        margin-top:14px;
+        font-size:16px;
+      }
+      text-align:right;
+    }
+    &__phone-number {
+      font-size:16px;
+    }
+    &__gmail {
+      font-size:16px;
+    }
+    &__policy {
+      a {
+        font-size: 16px;
+      }
+      text-align:right;
+      flex-direction: column;
+      gap: 0px;
+      margin-bottom:14px;
+    }
+  }
+}
+@media(max-width:320px) {
+  .footer {
+    padding:10px 16px;
+    font-size:12px;
+    &__logo-text {
+      font-size:12px;
+    }
+    &__contacts-container {
+      gap:10px;
+    }
+
+    &__policy {
+      a {
+        font-size:12px;
+      }
+    }
+  }
+}
+@media(max-width:720px) and (min-width: 660px) {
+  .people-list__card {
+    width:70%;
+    margin: 0 auto;
+  }
+}

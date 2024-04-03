@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --primary-color: #339989;
+  --primary-color-light: #E4EEED;
+  --text-color: #131515;
+  --muted-text: #495057;
+  --background: #FFFAFB;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+.search-container {
+  margin: 95px auto;
+}
+.search-container h2 {
+  margin-bottom: 33px;
+}
+.search-container__form {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+.search-container__form-select, .search-container__filter-btn {
+  padding: 12px 25px;
+  border-radius: 16px;
+  font-size: 18px;
+  border: none;
+  background: #EFEFEF;
+  flex-grow: 2;
+}
+.search-container__form-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Add custom arrow */
+  background-image: url("../../icons/chevron-down-solid.svg"); /* Path to your arrow image */
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: right 25px center;
+}
+.search-container__submit-btn {
+  padding: 9px 104px;
+  border-radius: 16px;
+  font-size: 22px;
+  border: none;
+  background: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  flex-grow: 0;
+}
+.search-container__filter-btn {
+  padding: 12px 21px;
+  flex-grow: 1;
+  background: #EFEFEF;
+  border: 1px solid var(--primary-color);
+  flex-grow: 0;
+}
+.search-container__filter-icon {
+  width: 26px;
+  height: 26px;
+  fill: var(--primary-color);
+}
+
+.people-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.people-list__card {
+  display: flex;
+  gap: 44px;
+  padding: 50px;
+  padding-bottom: 80px;
+  border: 1px solid gray;
+  border-radius: 16px;
+  width: 100%;
+}
+.people-list__card__doctor-img {
+  display: flex;
+  flex-direction: column;
+}
+.people-list__card__doctor-img img {
+  width: 200px;
+  height: 227px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.people-list__card__doctor-img__rating {
+  margin-top: 8px;
+  display: flex;
+  gap: 1px;
+  height: 21px;
+}
+.people-list__card__doctor-img__num-rating {
+  font-weight: bold;
+  margin: 0;
+}
+.people-list__card__doctor-img__num-rating span {
+  color: var(--primary-color);
+}
+.people-list__card__star-icon {
+  width: 24px;
+  fill: var(--primary-color);
+}
+.people-list__card__doctor-info__desc {
+  font-size: 24px;
+  color: var(--muted-text);
+  margin: 15px 0 30px;
+  max-width: 535px;
+}
+.people-list__card__doctor-info__location {
+  font-size: 22px;
+  color: var(--muted-text);
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.people-list__card__doctor-info h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: black;
+  margin: 0;
+}
+.people-list__card__price {
+  padding: 10px 16px;
+  background: #EFEFEF;
+  border-radius: 16px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  max-width: fit-content;
+}
+.people-list__card__price p {
+  font-size: 17px;
+  font-weight: bold;
+  color: var(--muted-text);
+  margin: 0;
+}
+.people-list__card__price .wallet-icon {
+  width: 22px;
+  height: 22px;
+  fill: var(--primary-color);
+}
+.people-list__card__cta-btn {
+  border-radius: 16px;
+  text-decoration: none;
+  color: var(--primary-color);
+  padding: 15px 36px;
+  font-weight: bold;
+  font-size: 20px;
+  border: 2px solid var(--primary-color);
+  background: #E4EEED;
+  max-width: fit-content;
+  height: fit-content;
+  display: inline-block;
+}
+
+.footer {
+  margin-top: 130px;
+  padding: 43px 175px;
+  font-size: 16px;
+}
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+}
+.footer__logo-text {
+  margin: 0;
+}
+.footer__logo-icon {
+  align-self: center;
+  width: 50px;
+  fill: var(--primary-color);
+}
+.footer__contacts-container {
+  display: flex;
+  flex-direction: row;
+  gap: 67px;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.footer__contacts p {
+  margin: 0;
+  font-size: 20px;
+}
+.footer__phone-number {
+  text-decoration: none;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.footer__gmail {
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--text-color);
+}
+.footer__policy {
+  display: flex;
+  gap: 55px;
+}
+.footer__policy a {
+  text-decoration: none;
+  color: var(--muted-text);
+}

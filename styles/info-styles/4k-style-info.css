@@ -1,0 +1,108 @@
+@media (min-width: 1981px) {
+  .content {
+    margin: 0 300px;
+  }
+  .navbar, .footer {
+    padding: 20px 300px;
+  }
+  .navbar__logo-icon {
+    width: 54px;
+    height: 54px;
+  }
+  .navbar__logo-text {
+    font-size: 20px;
+  }
+  .navbar__link-specialist {
+    font-size: 24px;
+  }
+  .navbar__phone-icon-circle {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+  }
+  .navbar__phone-icon {
+    width: 36px;
+    height: 36px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .navbar__consultations {
+    font-size: 24px;
+  }
+  .navbar__phone-number {
+    font-size: 30px;
+  }
+  .search-container__heading {
+    font-size: 70px;
+  }
+  .search-container__form-select, .search-container__filter-btn, .search-container__submit-btn {
+    height: 70px;
+    font-size: 22px;
+  }
+  .search-container__filter-icon {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+  }
+  .people-list__card__cta-btn {
+    font-size: 26px;
+  }
+  .people-list__card__price .wallet-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .people-list__card__price p {
+    font-size: 24px;
+  }
+  .people-list__card__doctor-info h3 {
+    font-size: 48px;
+  }
+  .people-list__card__doctor-info__desc {
+    font-size: 28px;
+    margin: 13px 0 20px;
+    max-width: 1000px;
+  }
+  .people-list__card__doctor-info__location {
+    font-size: 26px;
+  }
+  .people-list__card__doctor-img img {
+    width: 320px;
+    height: 360px;
+  }
+  .people-list__card__doctor-img__rating {
+    margin-top: 16px;
+    gap: 1px;
+    height: 36px;
+    justify-content: center;
+  }
+  .people-list__card__doctor-img__num-rating {
+    font-size: 24px;
+  }
+  .people-list__card__star-icon {
+    width: 38px;
+    height: 32px;
+  }
+  .footer__logo {
+    gap: 4px;
+  }
+  .footer__logo-icon {
+    width: 54px;
+    height: 54px;
+  }
+  .footer__logo-text {
+    font-size: 20px;
+  }
+  .footer__policy a {
+    font-size: 24px;
+  }
+  .footer__contacts p {
+    font-size: 26px;
+  }
+  .footer__phone-number {
+    font-size: 30px;
+  }
+  .footer__gmail {
+    font-size: 26px;
+  }
+}

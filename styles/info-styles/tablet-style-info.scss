@@ -1,0 +1,229 @@
+@media(max-width:1280px) {
+
+    .navbar {
+        padding: 22px 100px;
+        &__logo-icon {
+            width:50px;
+        }
+        &__logo-text {
+            font-size:18px;
+        }
+        &__link-specialist {
+            display:none;
+        }
+        &__consultations {
+            font-size:18px;
+        }
+        &__phone-number {
+            font-size:22px;
+        }
+        &__phone-icon-circle {
+            width:56px;
+            height:56px;
+            line-height:56px;
+        }
+        &__phone-icon {
+            width:26px;
+            top:14px;
+            left:15px;    
+        }
+    }
+    .content {
+        margin:0 100px;
+    }
+    .search-container {
+        margin: 120px 0;
+        &__heading {
+            font-size: 56px;
+            font-weight:500;
+            margin-bottom: 30px;
+        }
+        &__form {
+            flex-wrap: wrap;
+            gap:20px;
+        }
+        &__form-select,  &__filter-btn {
+            height:48px;
+        }
+        &__form-select {
+            background-position: right 20px center;
+        }
+        &__submit-btn {
+            padding: 9px auto;
+            width:100%;
+            flex-grow:1;
+        }
+        &__filter-btn {
+            padding:12px 21px;
+            flex-grow:1;
+            background: #EFEFEF;
+            border:1px solid var(--primary-color);
+            flex-grow:0;
+        }
+        &__filter-icon {
+            width: 26px;
+            height: 26px;
+            fill:var(--primary-color);
+        }
+    }
+    .people-list {
+        margin: 120px 0 200px;
+        &__card {
+            gap: 30px;
+            padding: 48px;
+            padding-bottom: 60px;
+            &__doctor-info {
+                h3 {
+                    font-size:30px;
+                }
+                &__desc {
+                    font-size:22px;
+                    margin:13px 0 20px;
+                    max-width:465px;
+                }
+                &__location {
+                    font-size:20px;
+                }
+            }
+            &__doctor-img {
+                img {
+                    width:200px;
+                    height:228px;
+                    object-fit:cover;
+                    border-radius:16px;
+                }
+                &__rating {
+                    margin-top:10px;
+                    gap:1px;
+                    height: 25px;
+                }
+            }
+            &__star-icon {
+                width:26px;
+                height:22px;
+            }
+        }
+    }
+    
+    .footer {
+        margin-top:200px;
+        padding: 38px 100px;
+        &__contacts-container {
+          gap:50px;
+        }
+        &__contacts {
+          gap: 0;
+          & p{
+            margin:0;
+            font-size:22px;
+          }
+        }
+        &__phone-number {
+          font-size:24px;
+        }
+        &__gmail {
+          font-size:22px;
+        }
+        &__policy {
+            & a {
+                font-size:20px;
+            }
+          gap: 30px;
+        }
+    }
+
+}
+
+@media(max-width:890px) {
+    
+    .navbar {
+        padding: 22px 50px;
+
+        &__consultations {
+            font-size:18px;
+        }
+        &__phone-number {
+            font-size:22px;
+        }
+        &__phone-icon-circle {
+            width:56px;
+            height:56px;
+            line-height:56px;
+        }
+        &__phone-icon {
+            width:26px;
+            top:14px;
+            left:15px;    
+        }
+    }
+    .content {
+        margin:0 50px;
+    }
+    .search-container {
+        margin: 100px 0;
+        &__heading {
+            font-size: 50px;
+        }
+    }
+    .people-list {
+        margin: 120px 0 100px;
+        &__card {
+            gap: 30px;
+            padding: 40px;
+            padding-bottom: 52px;
+            &__doctor-info {
+                h3 {
+                    font-size:30px;
+                }
+                &__desc {
+                    font-size:20px;
+                    margin:13px 0 20px;
+                    max-width:90%;
+                }
+                &__location {
+                    font-size:18px;
+                }
+            }
+            &__cta-btn {
+                padding: 10px 36px;
+                font-size: 18px;
+            }
+        }
+    }
+
+}
+@media(max-width:970px) {
+    .footer {
+
+        margin-top:200px;
+        padding: 30px 50px;
+        &__logo-text {
+            font-size:14px;
+        }
+        &__logo-icon {
+            width:40px;
+          }
+        &__contacts-container {
+          gap:20px;
+        }
+        &__contacts {
+          gap: 0;
+          & p{
+            margin:0;
+            font-size:18px;
+          }
+        }
+        &__phone-number {
+          font-size:20px;
+        }
+        &__gmail {
+          font-size:18px;
+        }
+        &__policy {
+            & a {
+                font-size:18px;
+            }
+          gap: 20px;
+        }
+    }
+}

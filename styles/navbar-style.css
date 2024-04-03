@@ -1,0 +1,83 @@
+:root{
+    --primary-color: #339989;
+    --primary-color-light: #E4EEED;
+    --text-color: #131515;
+    --muted-text: #495057;
+    --background: #FFFAFB;
+}
+*{
+    box-sizing:border-box;
+  }
+    .navbar {
+      border-bottom: 0.2px solid var(--muted-text);
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 175px;
+      text-transform: uppercase;
+    }
+    .navbar__logo {
+      display: flex;
+      flex-direction: column;
+      font-size: 16px;
+      align-items: center;
+      line-height: 0;
+      text-transform: none;
+    }
+    .navbar__logo-icon {
+      width:50px;
+      height:50px;
+      fill:var(--primary-color);
+    }
+    .navbar__phone {
+      display: flex;
+      gap: 17px;
+      margin: auto 0;
+      align-items: center;
+    }
+    .navbar__phone-icon-circle{
+      background: var(--primary-color);
+      border-radius:50%;
+      width:50px;
+      height:50px;
+      position:relative;
+      line-height:50px;
+    }
+    .navbar__phone-icon {
+      width:22px;
+      text-align: center;
+      fill:var(--background);
+      position:absolute;
+      top:14px;
+      left:13px;
+    }
+    .navbar__contact {
+      display: flex;
+      flex-direction: column;
+      line-height:0;
+    }
+    .navbar__consultations {
+      color: var(--muted-text);
+      font-size:14px;
+    }
+    .navbar__phone-number {
+      color: var(--primary-color);
+      font-size:18px;
+      margin:10px 0;
+      text-transform: lowercase;
+      text-decoration: none;
+    }
+    .navbar__menu-icon {
+      display:none;
+      color:#fff;
+    }
+    .navbar__link-specialist {
+      text-decoration: none;
+      text-transform: none;
+      color:var(--muted-text);
+      transition: 200ms all ease-in-out;
+    }
+    .navbar__link-specialist:hover{
+      color:var(--text-color);
+    }

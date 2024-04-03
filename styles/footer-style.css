@@ -1,0 +1,46 @@
+
+.footer {
+    height:178px;
+    padding:53px 175px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    background: var(--primary-color-light);
+    text-transform: none;
+    
+  }
+  .footer .navbar__logo-icon {
+    width:50px;
+  }
+  .footer .navbar__logo-text {
+    font-size:16px;
+  }
+  .footer__contacts-container {
+    display:flex;
+    gap:50px;
+    text-decoration:none;
+    line-height:normal;
+    align-items:end;
+  }
+  .footer__policy {
+    display:flex;
+    flex-direction: row;
+    gap:50px;
+    margin-top:36px;
+  }
+  .footer__policy p {
+    align-self:flex-end;
+    margin: 0;
+    margin-bottom:5px;
+  }
+  .footer__gmail {
+    color:var(--text-color);
+    line-height:normal;
+  }
+  .footer .navbar__phone-number {
+    font-weight:600;
+    text-transform: uppercase;
+  }
+  .footer__contacts {
+    gap:8px;
+  }
