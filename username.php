@@ -16,11 +16,15 @@ class PostWrapper {
     }
 
     public function __get($name) {
-        if(isset($_POST[$name])) {
-            return $_POST[$name];
+        if (isset($_POST[$name])) {
+            // Perform input validation and sanitization
+            return $this->sanitizeInput($_POST[$name]);
         } else {
             return null;
         }
+    }
+    private function sanitizeInput($input) {
+        return htmlspecialchars($input, ENT_QUOTES, 'UTF-8');
     }
 }
 
