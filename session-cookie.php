@@ -42,14 +42,14 @@ $handler = new SessionCookieHandler();
 // Встановлення значення у сесії
 $handler->setSessionValue('username', 'John Session');
 
-// Встановлення значення у куці
+// Встановлення значення у cookie
 $handler->setCookieValue('username', 'John Cookie', time() + (86400 * 30), '/'); // cookie дійсне протягом 30 днів
 
 // Отримання значення з сесії
 $sessionUsername = $handler->getSessionValue('username');
 echo "Session Username: " . $sessionUsername . "<br>";
 
-// Отримання значення з куці
+// Отримання значення з cookie
 $cookieUsername = $handler->getCookieValue('username');
 echo "Cookie Username: " . $cookieUsername . "<br>";
 
