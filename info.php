@@ -1,13 +1,38 @@
 
 <?php
-// Check if the 'services' and 'locations' parameters are set in the URL
-if(isset($_GET['service']) && isset($_GET['location'])) {
-    // Retrieve the values of 'services' and 'locations' parameters
-    $service = $_GET['service'];
-    $location = $_GET['location'];
+class GetWrapper {
+    private static $instance = null;
+    private $request = null;
 
+    // Приватний конструктор для перешкодження зовнішньому створенню екземплярів
+    private function __construct() {
+        $this->request = $_GET;
+    }
+
+    // Статичний метод для отримання єдиного екземпляру класу
+    public static function getInstance() {
+        if (self::$instance === null) {
+            self::$instance = new GetWrapper();
+        }
+        return self::$instance;
+    }
+
+    public function getRequest() {
+        return $this->request;
+    }
 }
+
+// Використання сінглтону
+$singleton = GetWrapper::getInstance();
+$request = $singleton->getRequest();
+
+if (isset($request['service']) && isset($request['location'])) {
+    $service = $request['service'];
+    $location = $request['location'];
+}
+    
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
