@@ -35,5 +35,5 @@ echo "Username: " . $postWrapper->username;
 //суперглобальний масив request дає змогу отримувати інформацію як від get, так і post запитів і cookie
 if (isset($_REQUEST['username'])) {
     $usernameFromRequest = htmlspecialchars($_REQUEST['username'], ENT_QUOTES, 'UTF-8');
-    echo "Username from REQUEST: " . $usernameFromRequest;
+    echo "<br/>\nUsername from REQUEST: " . $usernameFromRequest;
 }
